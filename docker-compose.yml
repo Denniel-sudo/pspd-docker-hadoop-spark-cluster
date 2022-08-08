@@ -9,6 +9,9 @@ services:
       - "19888:19888"
       - "8188:8188"
     container_name: "master"
+    volumes:
+      - ./src:/user_data
+      - ./output:/output
   slave1:
     build: ./hadoop-slave
     container_name: "slave1"
