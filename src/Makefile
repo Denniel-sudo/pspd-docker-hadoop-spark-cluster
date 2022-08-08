@@ -1,6 +1,10 @@
 all:
 	hdfs dfs -mkdir -p /user/root
 	hdfs dfs -put hello.txt /user/root/
+	./user_data/generate_file/random_words.py
+
+generate-input:
+	./user_data/generate_file/random_words.py
 
 # SPARK
 # 117.32606601715088 s

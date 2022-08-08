@@ -102,6 +102,41 @@ $ python ec2/ec2.py -k <Key Name> -s <Security Group ID> -n <Subnet ID> launch
 
 This script launch EC2 instance and prepare prerequisites to launch docker-hadoop-cluster.
 
+# Running Application Examples Commands
+
+```
+
+make all # setup your environment
+
+make generate-input # generate your input file
+
+# SPARK
+make spark-wordcount-1 # run wordcount with one worker
+make spark-wordcount-2 # run wordcount with two workers
+make spark-wordcount-5 # run wordcount with five workers
+
+spark-wordfreq-1 # run wordfreq with one worker
+spark-wordfreq-2 # run wordfreq with two worker
+spark-wordfreq-5 # run wordfreq with five worker
+
+spark-spr_freq_count-1 # run spr_freq_count with one worker
+spark-spr_freq_count-2 # run spr_freq_count with two worker
+spark-spr_freq_count-5 # run spr_freq_count with five worker
+
+spark-len_string-1 # run len_string with one worker
+spark-len_string-2 # run len_string with two worker
+spark-len_string-5 # run len_string with five worker
+
+# HADOOP
+hadoop-wordcount  # run wordcount
+hadoop-wordfreq # run wordfreq
+hadoop-spr_freq_count # run spr_freq_count
+hadoop-len_string  # run len_string
+
+hadoop-result # generate output to output folder of host
+
+```
+
 # Docker Hub
 
 | Image name | Pulls | Stars |

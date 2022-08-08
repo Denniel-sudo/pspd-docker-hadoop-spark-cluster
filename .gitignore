@@ -6,3 +6,4 @@ bin/*.hosts
 *.pyc
 
 output/
+src/hello.txt
